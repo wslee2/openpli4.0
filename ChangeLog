@@ -1,0 +1,23 @@
+2015/02/24 관련 사항 
+	cd openpli4.0/build/tmp/sysroots/
+	find . -name "*enigma2-plugin-systemplugins-transcodingsetup*" -exec rm -rf {} \;
+	MACHINE=[MODEL] bitbake -c cleanall enigma2-plugin-extensions-hbbtv
+	openpli-enigma2-image
+2015/02/05 관련 사항 
+	cd openpli4.0/build/tmp/sysroots/
+	find . -name "*enigma2-plugin-extensions-hbbtv*" -exec rm -rf {} \;
+	find . -name "*softcamsetup*" -exec rm -rf {} \;
+	MACHINE={model} bitbake -c cleanall enigma2-plugin-extensions-hbbtv
+	enigma2-plugin-pli-softcamsetup
+
+2015/02/03 관련 사항 softcam-setup
+	cd openpli4.0/build/tmp/sysroots/tmnano2super/pkgdata/runtime/
+	find . -name "*softcamsetup*" -exec rm -rf {} \;
+
+2015/01/27 관련사항 
+	rm -rf openpli4.0/build/tmp/sysroots/tmnano3tcombo/pkgdata/runtime-reverse/enigma2-plugin-systemplugins-autobouquetsmaker*
+	rm -rf openpli4.0/build/tmp/sysroots/tmnano3tcombo/usr/lib/enigma2/python/Plugins/SystemPlugins/AutoBouquetsMaker
+	rm -rf openpli4.0/build/tmp/sysroots/tmnano3tcombo/pkgdata/shlibs2/*autob*
+	rm -rf openpli4.0/build/tmp/sysroots/tmnano3tcombo/sysroot-providers/*autobo*
+	rm -rf openpli4.0/build/tmp/sysroots/tmnano3tcombo/pkgdata/runtime/*autobou*
+
